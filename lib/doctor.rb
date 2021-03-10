@@ -23,7 +23,7 @@ class Doctor
     doctor_patients = []
     Appointment.all.each do |appointment| 
       if appointment.doctor == self
-        doctor_patients << appointment.patients
+        doctor_patients << appointment.patient
       end
     end
     doctor_patients
