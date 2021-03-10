@@ -20,6 +20,13 @@ class Doctor
   end
   
   def patients 
+    doctor_patients = []
+    Appointment.all.each do |appointment| 
+      if appointment.doctor == self
+        doctor_patients << appointment.patients
+      end
+    end
+    doctor_patients
   end
     
 end
