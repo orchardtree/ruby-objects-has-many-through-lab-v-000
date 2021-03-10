@@ -1,3 +1,4 @@
+require 'pry'
 class Artist 
   @@all = []
   attr_accessor :name
@@ -12,5 +13,6 @@ class Artist
   
   def songs 
     Song.all.select{|song| song.artist == self}
+    binding.pry
   end
 end
