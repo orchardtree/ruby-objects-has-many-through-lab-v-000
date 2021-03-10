@@ -7,4 +7,8 @@ class Song
     @y = y
     @@all << self
   end
+  
+  def self.all
+    @@all
+  end
 end
