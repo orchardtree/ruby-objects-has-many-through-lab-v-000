@@ -28,5 +28,4 @@ class Patient
     end
     patient_doctors
   end
-  end
 end
